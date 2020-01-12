@@ -1,0 +1,23 @@
+header{
+  text-align: left;
+  height: 3rem;
+  background-color: rgb(38, 72, 184);
+  display: flex;
+  justify-content: space-between;
+  .header-right{
+    line-height: 3rem;
+    padding-left: 2rem;
+    font-weight: bold;
+    color: white!important;
+    text-decoration: none!important;
+  }
+  .header-left{
+    line-height: 3rem;
+    padding-right: 2rem;
+    a{
+      font-weight: bold;
+      color: white!important;
+      text-decoration: none!important;
+    }
+  }
+}

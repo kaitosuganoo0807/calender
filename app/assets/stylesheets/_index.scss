@@ -2,18 +2,23 @@ body, html {
   padding: 0;
   margin: 0;
   text-align: center;
-  line-height: 1.4em;
-}
-
-body {
   
 }
 
+body {
+  .page{
+    height: 100vh;
+    background-color: yellow;
+  }
+}
+
 h1 {
+  padding-top: 60px;
+  margin: 0;
   font-size: 60px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   text-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
-  color: yellow;
+  color: rgb(216, 21, 95);
 }
 
 h2 {

@@ -10,10 +10,16 @@
 #event_title{
   width: 30%;
   height: 3rem;
+  padding: 0 20px;
+  font-size: 1.5rem;
 }
 #event_description{
   width: 40%;
   height: 9rem;
+  border: rgb(177, 172, 172) 1px solid;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
 }
 .actions{
   margin-top: 4rem;
@@ -25,4 +31,11 @@
     height: 50px;
     width: 90px;
   }
+}
+.back{
+  line-height: 4rem;
+  font-size: 1.6rem;
+  color: #333;
+  text-decoration: none!important;
+
 }

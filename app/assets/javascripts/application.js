@@ -12,9 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require moment
+//= require fullcalendar
 //= require activestorage
+//= require turbolinks
 //= require_tree .
 
-$(window).load( function() {
-  $('#mycalendar').monthly();
-});
+

@@ -8,16 +8,14 @@
         - event.errors.full_messages.each do |message|
           %li= message
   .field
-    = form.label :title
-    = form.text_field :title
+    = form.text_field :title,placeholder: "タイトルを入力してください"
   .field
-    = form.label :description
-    = form.text_area :description
+    = form.text_area :description,placeholder: "イベントを入力してください"
   .field
-    = form.label :start_date
+    Start
     = form.datetime_select :start_date
   .field
-    = form.label :end_date
+    End
     = form.datetime_select :end_date
   .actions
-    = form.submit
+    = form.submit "送 信",class: :submit_new

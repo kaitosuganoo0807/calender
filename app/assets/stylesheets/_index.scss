@@ -1,0 +1,32 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+body {
+  padding: 10vh 0;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+  color: yellow;
+}
+
+h2 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 30px;
+  text-shadow: 0 0px 30px rgba(0, 0, 0, 0.3);
+  color: blue;
+}
+
+.monthly {
+  box-shadow: 0 13px 40px rgba(0, 0, 0, 0.5);
+  font-size: 0.8em;
+  max-width: 600px;
+  width: 100%;
+  display: inline-block;
+}

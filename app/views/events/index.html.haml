@@ -1,16 +1,14 @@
 %body
   = render "header"
-  .page
-    %h1 calender.space
-    %h2 Events
-    %table
-      %thead
-    %tr
-      %th Title
-      %th Description
-      %th Start date
-      %th End date
-      %th{:colspan => "3"}
+  %h1 calender.space
+  %table
+    %thead
+  %tr
+    %th Title
+    %th Description
+    %th Start date
+    %th End date
+    %th{:colspan => "3"}
   %tbody
     - @events.each do |event|
       %tr
@@ -27,4 +25,5 @@
 
 %h2 calender
 #calendar
+
 = render "footer"

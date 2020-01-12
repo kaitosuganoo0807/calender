@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require activestorage
 //= require_tree .
+
+$(window).load( function() {
+  $('#mycalendar').monthly();
+});

@@ -1,0 +1,5 @@
+%header
+  .header-right
+    = "#{current_user.name}様の本日の予定は「」件です"
+  .header-left
+    = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'

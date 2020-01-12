@@ -1,16 +1,14 @@
 %body
   = render "header"
-  .page
-    %h1 calender.space
-    %h2 Events
-    %table
-      %thead
-    %tr
-      %th Title
-      %th Description
-      %th Start date
-      %th End date
-      %th{:colspan => "3"}
+  %h1 calender.space
+  %table
+    %thead
+  %tr
+    %th Title
+    %th Description
+    %th Start date
+    %th End date
+    %th{:colspan => "3"}
   %tbody
     - @events.each do |event|
       %tr
@@ -21,10 +19,9 @@
         %td= link_to 'Show', event
         %td= link_to 'Edit', edit_event_path(event)
         %td= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }
-%br/
-= link_to 'New Event', new_calender_path
-= link_to 'Home Calendar', root_path
-
-%h2 calender
-#calendar
+  %br/
+  %h2 calender
+  = link_to 'New Event', new_calender_path
+  = link_to 'Home Calendar', root_path
+  #calendar
 = render "footer"

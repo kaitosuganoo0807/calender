@@ -1,3 +1,7 @@
-%h1 New Event
-= render 'form',event: @event
-= link_to 'Back', events_path
+%body
+  = render "header"
+  .new
+    %h1 New Event
+    = render 'form',event: @event
+    = link_to 'Back', events_path
+  = render "footer"

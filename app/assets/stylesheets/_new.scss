@@ -1,0 +1,28 @@
+.new{
+  min-height:calc(100vh - 9rem);
+  .field{
+    margin-top: 10px;
+    input{
+    }
+  }
+}
+
+#event_title{
+  width: 30%;
+  height: 3rem;
+}
+#event_description{
+  width: 40%;
+  height: 9rem;
+}
+.actions{
+  margin-top: 4rem;
+  .submit_new{
+    background-color:blue;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 50px;
+    width: 90px;
+  }
+}

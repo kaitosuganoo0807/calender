@@ -2,8 +2,6 @@
   min-height:calc(100vh - 9rem);
   .field{
     margin-top: 10px;
-    input{
-    }
   }
 }
 
@@ -13,6 +11,7 @@
   border-radius: 40px;
   border: 1px solid gray;
   padding-left: 10px;
+  font-size: 12px;
 }
 #event_description{
   width: 40%;
@@ -22,6 +21,7 @@
   border-radius: 4px;
   border: 1px solid gray;
   padding: 8px 0 0 8px;
+  font-size: 15px;
 }
 .actions{
   margin-top: 3rem;
@@ -44,7 +44,7 @@
 .back-main {
   margin-top: 20px;
   height: 60px;
-  .back {
+  .back-1 {
     position: relative;
     display: inline-block;
     font-weight: bold;

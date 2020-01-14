@@ -3,8 +3,8 @@
   .edit-event
     %h1 Editing Event
     = render 'form', event: @event
-    = link_to 'Show', @event
-
-    = link_to 'Back', events_path
+    .edit-button
+      = link_to 'Show', @event,class:"show-button"
+      = link_to 'Back', events_path,class:"back-button"
 
   = render "footer"

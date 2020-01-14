@@ -3,5 +3,6 @@
   .new
     %h1 New Event
     = render 'form',event: @event
-    = link_to 'Back', events_path
+    .back-main
+      = link_to 'Back', events_path,class:"back"
   = render "footer"

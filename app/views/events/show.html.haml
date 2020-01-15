@@ -13,6 +13,8 @@
   = @event.end_date
 = link_to 'Edit', edit_event_path(@event)
 |
+= link_to 'Destroy', @event,class:"destroy", method: :delete, data: { confirm: 'Are you sure?' }
+|
 = link_to 'Back', events_path
 |
 = link_to 'Home Calendar', root_path

@@ -1,7 +1,7 @@
 %body
   = render "header"
   .edit-event
-    %h1 Editing Event
+    %h1.edit-h1 Editing Event
     = render 'form', event: @event
     .edit-button
       = link_to 'Show', @event,class:"show-button"

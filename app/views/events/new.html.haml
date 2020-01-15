@@ -1,7 +1,7 @@
-%body
+.new-warpper
   = render "header"
   .new
-    %h1 New Event
+    %h1.newh1 New Event
     = render 'form',event: @event
     .back-main
       = link_to 'Back', events_path,class:"back-1"

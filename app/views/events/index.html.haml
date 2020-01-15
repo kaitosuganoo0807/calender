@@ -1,11 +1,12 @@
-%body
+.top-wrapper
   = render "header"
-  %h1 calender.space
+  %h1 calendar.space
+  .drop-container
+    .drop
 %br/
 = link_to 'New Event', new_event_path,class:"new-event"
 = link_to 'Home Calendar', root_path,class:"home"
 
-%h2 calender
 #calendar
 
 = render "footer"

@@ -17,5 +17,6 @@
   .field
     End
     = form.datetime_select :end_date
+    = form.hidden_field :user_id ,value:current_user.id
   .actions
     = form.submit "送 信",class: :submit_new

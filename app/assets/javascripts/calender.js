@@ -26,9 +26,11 @@ $(function () {
 								right: 'today prev,next'
 							},
 							defaultTimedEventDuration: '03:00:00',
+							timeZone: 'Asia/Tokyo',
+							locale: 'ja',
 							buttonText: {
-								prev: '前',
-								next: '次',
+								prev: '先月',
+								next: '来月',
 								prevYear: '前年',
 								nextYear: '翌年',
 								today: '今日',

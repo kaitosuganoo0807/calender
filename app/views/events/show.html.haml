@@ -13,22 +13,25 @@
     %li
     %li
   .content-show
-    %p
-      %strong Title:
-      = @event.title
-    %p
-      %strong Description:
-      = @event.description
-    %p
-      %strong Start date:
-      = @event.start_date
-    %p
-      %strong End date:
-      = @event.end_date
-    = link_to 'Edit', edit_event_path(@event)
-    |
-    = link_to 'Destroy', @event,class:"destroy", method: :delete, data: { confirm: 'Are you sure?' }
-    |
-    = link_to 'Back', events_path
-    |
-    = link_to 'Home Calendar', root_path
+    .content-show__box
+      %p.title
+        %strong タイトル:
+        = @event.title
+      %p.description
+        %strong 詳細:
+        = @event.description
+      %p.start-date
+        %strong 時間(始まり):
+        = @event.start_date
+      %p.end-date
+        %strong 時間(終わり):
+        = @event.end_date
+      .content-show-button
+        = link_to 'Edit', edit_event_path(@event),class:"edit-show"
+
+        = link_to 'Destroy', @event,class:"destroy-show", method: :delete, data: { confirm: 'Are you sure?' }
+
+        = link_to 'Back', events_path,class:"back-show"
+
+        = link_to 'Home Calendar', root_path,class:"home-calendar-show"
+= render "footer"

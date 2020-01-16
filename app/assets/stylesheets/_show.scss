@@ -16,7 +16,7 @@
 
 .context h1{
     text-align: center;
-    top: -300px;
+    top: -400px;
     color: #fff;
     font-size: 50px;
 }
@@ -149,14 +149,42 @@
 .content-show {
   position: absolute;
   width: 400px;
-  height: 200px;
+  height: 400px;
   left: 0;
   right: 0;
-  top: 40px;
+  top: 200px;
   bottom :0;
   margin:  auto;
   border: solid 2px #ffcb8a;
   border-radius: 3px 0 3px 0;
+  background-color: #fff;
+  &__box {
+    height: 40%;
+    padding: 3rem 0 0 0;
+    .title {
+        border-bottom: 1px dashed #10b9ec;
+        margin-bottom: 10px;
+    }
+    .description {
+        border-bottom: 1px dashed #10b9ec;
+        margin-bottom: 10px;
+    }
+    .start-date {
+        border-bottom: 1px dashed #10b9ec;
+        margin-bottom: 10px;
+    }
+    .end-date {
+        border-bottom: 1px dashed #10b9ec;
+        margin-bottom: 10px;
+    }
+    .content-show-button {
+        padding: 4rem 0 0 0 ;
+    }
+  }
+}
+
+strong {
+    color: orange;
 }
 
 .content-show:before,.content-show:after

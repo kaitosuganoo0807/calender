@@ -1,0 +1,63 @@
+.edit-event{
+  min-height:calc(100vh - 9rem);
+  .field{
+    margin-top: 10px;
+  }
+}
+
+.edit-h1 {
+  position: relative;
+  color: blue;
+  font-size: 2.5em;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 2;
+  margin: 30px auto;
+  text-align: center;
+  opacity: 0;
+  animation: appear 2s 1s forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.edit-button {
+  height: 60px;
+  margin-top: 30px;
+  .show-button {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #00BCD4;
+    background: #ECECEC;
+    transition: .4s;
+    margin-right: 10px;
+    &:hover {
+      background: #00bcd4;
+      color: white;
+    }
+  }
+  .back-button {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #00BCD4;
+    background: #ECECEC;
+    transition: .4s;
+    margin-left: 10px;
+    &:hover {
+      background: #00bcd4;
+      color: white;
+    }
+  }
+}

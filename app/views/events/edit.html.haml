@@ -1,5 +1,10 @@
-%h1 Editing Event
-= render 'form', event: @event
-= link_to 'Show', @event
+%body
+  = render "header"
+  .edit-event
+    %h1.edit-h1 Editing Event
+    = render 'form', event: @event
+    .edit-button
+      = link_to 'Show', @event,class:"show-button"
+      = link_to 'Back', events_path,class:"back-button"
 
-= link_to 'Back', events_path
+  = render "footer"

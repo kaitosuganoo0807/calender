@@ -4,18 +4,30 @@ class EventsController < ApplicationController
 
 
   def index
-    @events = Event.all
-    @now = Time.current 
+    @events = Event.where(user_id:current_user.id)
+    @now = Date.today
+    now = Time.current 
+    now2 = Event.select("start_date")
+    @nowday = Event.where(start_date:now)
   end
 
   def show
+    @events = Event.where(user_id:current_user.id)
+    @now = Time.current 
+    @now2 = Event.select("start_date")
   end
 
   def new
     @event = Event.new
+    @events = Event.where(user_id:current_user.id)
+    @now = Time.current 
+    @now2 = Event.select("start_date")
   end
 
   def edit
+    @events = Event.where(user_id:current_user.id)
+    @now = Time.current 
+    @now2 = Event.select("start_date")
   end
 
   def create

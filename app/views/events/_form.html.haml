@@ -11,10 +11,10 @@
     = form.text_field :title,placeholder: "タイトルを入力してください"
   .field
     = form.text_area :description,placeholder: "イベントを入力してください"
-  .field
+  .field.start
     Start
     = form.datetime_select :start_date
-  .field
+  .field.end
     End
     = form.datetime_select :end_date
   .actions

@@ -151,10 +151,23 @@ h2 {
 
 
 #calendar {
-  margin-top: 300px;
+  margin-top: 400px;
 }
-.fc-left h2 {
-  font-weight: normal;
+.fc-center h2 {
+  font-weight: 600;
+  color: orange;
+  text-align: center;
+}
+.fc-right button {
+  background: #fff;
+  color: rgb(31, 173, 230);
+  font-weight: bold;
+  border: 1px solid blue;
+  transition: .4s;
+  &:hover {
+    background: rgb(31, 173, 230);
+    color: #fff;
+  }
 }
 .fc-widget-header th {
   background-color: #f8dbc6;

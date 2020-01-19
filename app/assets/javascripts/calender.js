@@ -40,7 +40,10 @@ $(function () {
                 },
                 timeFormat: "HH:mm",
                 eventColor: '#63ceef',
-                eventTextColor: '#000000',
+								eventTextColor: '#000000',
+								
+								googleCalendarApiKey: 'AIzaSyBF0vYwIgndNfqpvXaYoXmRW9OXfCB_cRs',
+    						events:{googleCalendarId: '64.sugano.kaito@gmail.com'}
 					});
 			}
 	});

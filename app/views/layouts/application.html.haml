@@ -2,11 +2,32 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    -# %script{:src => "fullcalendar/gcal.js", :type => "text/javascript"}
+
     %title Calender
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+
+  -# %br/
+  -# %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"}
+  -# %br/
+  -# / full calendar
+  -# %br/
+  -# %link{:href => "fullcalendar/fullcalendar.css", :rel => "stylesheet"}/
+  -# %br/
+  -# %script{:src => "fullcalendar/lib/moment.min.js"}
+  -# %br/
+  -# %script{:src => "fullcalendar/fullcalendar.js"}
+  -# %br/
+  -# %script{:src => "fullcalendar/gcal.js"}
+  -# %br/
+  -# / /full calendar
+  -# %br/
+
+
 
   %body
   = yield
